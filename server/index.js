@@ -1,15 +1,23 @@
 const express = require("express");
-// const cors = require("cors");
-// const mongoose = require("mongoose");
+require('dotenv').config();
+const connectDb = require("./Modules/db")
+
 const PORT = process.env.PORT || 5000
 
 const app = express();
 
-app.get("/robo",(req, res) => {
+app.get("/",(req, res) => {
        res.send('Hello world ...')
-}
-)
-
-app.listen(PORT,() => {
-    console.log("server is running on server http://localhost:",PORT);
 })
+try {
+    connectDb().then(() => {
+
+        app.listen(PORT,() => {
+            console.log(`server is running on server http://localhost:${PORT}`);
+        });
+
+    })
+    
+} catch (error) {
+    console.log("server",error);
+}
