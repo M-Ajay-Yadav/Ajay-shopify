@@ -1,5 +1,6 @@
 const express = require("express");
 require('dotenv').config();
+require("./Modules/User");
 const connectDb = require("./Modules/db")
 
 const PORT = process.env.PORT || 5000
