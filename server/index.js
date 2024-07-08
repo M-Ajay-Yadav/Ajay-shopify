@@ -1,15 +1,25 @@
 const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const cors = require('cors');
+const AuthRouter = require('./Routes/AuthRouter')
+
 require('dotenv').config();
 require("./Modules/User");
 const connectDb = require("./Modules/db")
 
 const PORT = process.env.PORT || 5000
 
-const app = express();
 
 app.get("/",(req, res) => {
        res.send('Hello world ...')
 })
+
+app.use(bodyParser.json());
+app.use(cors());
+app.use('/auth',AuthRouter );
+
+
 try {
     connectDb().then(() => {
 
