@@ -1,0 +1,33 @@
+.HeaderComponent{
+    font-size: 24px;
+    /* color:blue; */
+    background-color: blue;
+    height:5rem;
+    width:100vw;
+}
+
+.HeaderSection{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+
+.ContainerSet .Set .list .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0rem 1rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.link{
+    text-decoration: none;
+    font-style: none;
+    
+}
