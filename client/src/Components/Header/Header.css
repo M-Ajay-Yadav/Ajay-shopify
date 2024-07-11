@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
 .HeaderComponent{
     font-size: 24px;
     /* color:blue; */
@@ -16,7 +21,8 @@
 
 .ContainerSet .Set .list .link{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     padding:0rem 1rem;
 }
@@ -25,9 +31,16 @@
     flex-direction: row;
 }
 
-
-.link{
+ul li{
+    color: rgba(171, 231, 75, 0.842);
+}
+a:link{
     text-decoration: none;
-    font-style: none;
-    
+    /* color: rgb(18, 238, 66); */
+}
+a:hover{
+    color: orange;
+}
+a:active{
+    color: orange;
 }

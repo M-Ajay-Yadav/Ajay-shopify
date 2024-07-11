@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="HeaderComponent">
+    <div className="HeaderComponent flex">
       <div className="HeaderSection flex">
         <div className="icon flex">
           <img src="img" alt="img" />
@@ -14,28 +14,38 @@ const Header = () => {
           <div className="ContainerSet flex">
             <ul className="Set flex">
               <li className="flex list">
-                <NavLink className="link" href="">
+                <NavLink className="link" to="/">
                   home
                 </NavLink>
               </li>
               <li className="flex list">
-                <NavLink className="link" href="">
+                <NavLink className="link" to="/Products">
                   Products
                 </NavLink>
               </li>
               <li className="flex list">
-                <NavLink className="link" href="">
+                <NavLink className="link" to="/category">
                   Category
                 </NavLink>
               </li>
               <li className="flex list">
-                <NavLink className="link" href="">
+                <NavLink className="link" to="/about">
                   About us
                 </NavLink>
               </li>
               <li className="flex list">
-                <NavLink className="link" href="">
+                <NavLink className="link" to="/contact">
                   Contacts Us
+                </NavLink>
+              </li>
+              <li className="flex list">
+                <NavLink className="link" to="/Signup">
+                  SignUp
+                </NavLink>
+              </li>
+              <li className="flex list">
+                <NavLink className="link" to="/login">
+                  Login
                 </NavLink>
               </li>
             </ul>
