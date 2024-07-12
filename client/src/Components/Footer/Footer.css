@@ -1,0 +1,20 @@
+.FooterSection{
+    height:3rem;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-content: end;
+    background-color: royalblue;
+    align-items: center;
+    /* margin-top:71vh; */
+    bottom:0;
+    left:0;
+    position:fixed;
+    /* position:; */
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

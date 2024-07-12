@@ -11,6 +11,7 @@ import Products from "./Pages/Products/Products";
 import Contact from "./Pages/Contact/Contact";
 import Category from "./Pages/Category/Category";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/category" element={<Category />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

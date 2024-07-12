@@ -3,13 +3,16 @@ import { ToastContainer, toast } from "react-toastify";
 import "./Login.css";
 
 const Login = () => {
+  const handleLogin = () => {
+    alert("login successful");
+  };
   return (
     <div className="LoginSection">
       <div className="Section">
         <h1>Login</h1>
-        <form action="">
+        <form action="" onSubmit={handleLogin}>
           <div className="container">
-            <label htmlFor="Email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               className="inputbox"
               type="Email"
@@ -19,18 +22,20 @@ const Login = () => {
             />
           </div>
           <div className="container">
-            <label htmlFor="Password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               className="inputbox"
               type="Password"
               name="Password"
-              autoFocus
               placeholder="Enter your name"
             />
           </div>
-          <button className="btn" onClick="Submit">
+          <button className="btn" type="submit">
             Submit
           </button>
+          <p className="text">
+            I Don't have an account <a href="/signup">signup</a>
+          </p>
         </form>
         <ToastContainer />
       </div>

@@ -19,27 +19,35 @@
 }
 
 
-.ContainerSet .Set .list .link{
+.ContainerSet .Set .list .link  {
     display: flex;
     /* justify-content: center; */
     justify-content: space-between;
     align-items: center;
     padding:0rem 1rem;
+    /* color: green; */
 }
 .flex{
     display: flex;
     flex-direction: row;
 }
 
-ul li{
-    color: rgba(171, 231, 75, 0.842);
+.link{
+    color: rgb(255, 21, 13);
 }
+.link:hover{
+    color: rgb(69, 235, 27);
+}
+
 a:link{
     text-decoration: none;
     /* color: rgb(18, 238, 66); */
+    /* color: green; */
+    color: rgb(255, 21, 13);
+
 }
 a:hover{
-    color: orange;
+    color: rgb(19, 228, 11);
 }
 a:active{
     color: orange;

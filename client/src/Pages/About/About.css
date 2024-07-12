@@ -1,0 +1,47 @@
+.AboutSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10vh 0;
+    
+    font-size: 2rem;
+  }
+  /* .Section{
+  
+} */
+.About{
+    box-shadow: 8px 8px 24px 0px rgba(66, 68 , 90, 1);
+    width:100%;
+    max-width: 80vw;
+    max-height:auto;
+    padding:2rem;
+    margin-bottom: 40px;
+    border-radius: 15px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 25px;
+  
+  }
+  .inputbox{
+    padding:10px;
+    border:none;
+    border-bottom: 2px solid #000;
+    max-width: 350px;
+  
+  }
+  .btn{
+    border:none;
+    color:chocolate;
+    background-color: green;
+    border-radius: 50px;
+    padding:20px;
+    font-size: 1rem;
+    font-style:italic;
+    margin-top: 1rem;
+    margin-left:35%;
+  }
